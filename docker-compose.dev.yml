@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  scrapper:
+    container_name: dollar.street.dev
+    image: dollar.street.dev
+    build: ./
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    volumes:
+      - ./src:/_dev
